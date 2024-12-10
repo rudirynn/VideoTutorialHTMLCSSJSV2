@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bankster - Digital Bank</title>
+    <title>Raspberry Pi Foundation</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/128fab7520.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="navbar__container">
-                <a href="/" id="navbar-logo">Bankster</a>
+                <a href="/" id="navbar-logo">Raspberry Pi </a>
                 <ul class="navbar__menu">
                     <li class="navbar__item">
                         <a href="/" class="navbar__links">Home</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="/services.html" class="navbar__links">Services</a>
+                        <a href="/events.html" class="navbar__links">Events</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="/pricing.html" class="navbar__links">Pricing</a>
+                        <a href="/booking.html" class="navbar__links">Booking</a>
                     </li>
                     <li class="navbar__btn mobile">
                         <a href="/signup.html" class="navbar__links">Sign Up</a>
@@ -30,11 +32,26 @@
                     <a href="/signup.html" class="button">Sign Up</a>
                 </div>
 
-                <button class="navbar__toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false"><i class="fas fa-bars"></i></button>
-
-
+                <button class="navbar__toggle" id="mobile-menu" aria-label="Toggle Navigation" aria-expanded="" false><i class="fa-solid fa-bars"></i></button>
             </div>
         </nav>
     </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1>Raspberry Pi Foundation</h1>
+                    <p>Enabling all young people to realise their full potential through computing</p>
+                    <button class="hero__btn">Sign up</button>
+                </div>
+                <div class="hero__image">
+                    <img id="hero-img" src="/images/CodeClubImage2.svg" alt="Imageo of Raspberry Pi code club">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
 </body>
 </html>

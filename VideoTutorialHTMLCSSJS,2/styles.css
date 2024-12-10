@@ -65,6 +65,8 @@
 }
 
 .button{
+    display: flex;
+    align-items: center;
     background: #0ce48d;
     padding: 10px 20px;
     border: none;
@@ -82,7 +84,13 @@
     display: none;
 }
 
+
 @media screen and (max-width: 968px){
+
+    .fa-bars{
+        line-height: normal;
+    }
+
     .navbar__toggle{
         display: block;
         position: absolute;
@@ -96,5 +104,126 @@
         background: none;
         cursor: pointer;
         padding: 0;
+    }
+
+    .navbar__menu{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100% - 80px);
+        opacity: 0;
+        transition: all 0.5s ease;
+        background: #131313;
+        z-index: 10;
+        margin: 0;
+    }
+
+    .navbar__menu.active{
+        left: 0;
+        opacity: 1;
+    }
+
+    .navbar__item{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar__links{
+        text-align: center;
+        padding-top: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Sign Up Button */
+    .navbar__btn.desktop{
+        display: none;
+    }
+
+    .navbar__btn.mobile{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+
+    .button{
+        width: 80%;
+        height: 60px;
+        justify-content: center;
+    }
+}
+
+/* Hero CSS */
+
+.hero{
+    background-color: #141414;
+}
+
+.hero__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+    height: 90vh;
+    width: 100%;
+    padding: 0;
+    max-width: 1300px;
+}
+
+.hero__container{
+    color: #fff;
+}
+
+.hero__content h1{
+    font-size: 4rem;
+}
+
+.hero__content p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.hero__btn{
+    font-size: 1rem;
+    background: #0ce48d;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.hero__btn:hover{
+    background: #0ba467;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero__image{
+    text-align: center;   
+}
+
+#hero-img{
+    width: 80%;
+    height: 80%;
+}
+
+/* Hero Mobile Responsive CSS */
+
+@media screen and (max-width: 768px){
+    .hero__container{
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 60px 0px;
     }
 }
