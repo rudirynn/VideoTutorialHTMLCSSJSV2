@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/128fab7520.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="navbar__container">
+                <a href="/" id="navbar-logo">Raspberry Pi </a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/events.html" class="navbar__links">Events</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/booking.html" class="navbar__links">Booking</a>
+                    </li>
+                    <li class="navbar__btn mobile">
+                        <a href="/signup.html" class="navbar__links">Sign Up</a>
+                    </li>
+                </ul>
+
+                <div class="navbar__btn desktop">
+                    <a href="/signup.html" class="button">Sign Up</a>
+                </div>
+
+                <button class="navbar__toggle" id="mobile-menu" aria-label="Toggle Navigation" aria-expanded="" false><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1>Raspberry Pi Foundation</h1>
+                    <p>Enabling all young people to realise their full potential through computing</p>
+                    <button class="hero__btn">Sign up</button>
+                </div>
+                <div class="hero__image">
+                    <img id="hero-img" src="/images/CodeClubImage2.svg" alt="Imageo of Raspberry Pi code club">
+                </div>
+            </div>
+        </section>
+
+        <!-- Rotating Logos Section -->
+        <div class="rotating-logos">
+            <div class="rotating-logos__track">
+                <span class="logo-text">LEGION</span>
+                <span class="logo-text">TRUST</span>
+                <span class="logo-text">DISTRITOR</span>
+                <span class="logo-text">VENTURX</span>
+                <span class="logo-text">CAPITAL</span>
+                <span class="logo-text">HEDGIES</span>
+            </div>
+        </div>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <div class="container">
+                <h2>Why Choose Us</h2>
+                <p class="intro-text">
+                    Discover how our financial and investment management Saas caan help you take control of your finances with ease and efficiency.
+                </p>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-lock"></i>
+                        <h3>Secure & Reliable</h3>
+                        <p>We prioritise your financial security with end-to-end encryption,ensuring your data is protected 24/7.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h3>AI-Powered Insights</h3>
+                        <p>Our intelling AI systems provides actionable financial Insights to help you grow your wealth and optimise investments.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-user"></i>
+                        <h3>User-Friendly Interface</h3>
+                        <p>Our modern, intuituve interface makes engaging your finances simple and stress-free, regardless of your financial expertise.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-gauge-simple-high"></i>
+                        <h3>Real-Time Data</h3>
+                        <p>Access real-time financial data to make faster, better-informed decisions for your personal or business finances.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
