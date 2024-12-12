@@ -224,6 +224,240 @@
     .hero__container{
         grid-template-columns: 1fr;
         height: auto;
-        padding: 60px 0px;
+        padding: 120px 0px;
     }
+
+    .hero__content{
+        text-align: center;
+        margin-bottom: 4rem;
+        padding: 0;
+    }
+
+    .hero__content h1{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .hero__content p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero__container{
+        width: 100vw;
+        padding: 60px 0;
+    }
+
+    .hero__content h1{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .hero__btn{
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
+/* Rotating Logos */
+
+.rotating-logos{
+    overflow: hidden;
+    padding: 40px 0;
+    background: #f8f8f8;
+    white-space: nowrap;
+}
+
+.rotating-logos:hover .rotating-logos__track{
+    animation-play-state: paused;
+}
+
+.rotating-logos__track{
+    display: inline-block;
+    animation: rotate 12s linear infinite;
+}
+
+.logo-text{
+    font-size: 40px;
+    font-weight: bold;
+    color: #2b302d;
+    margin: 0 40px;
+}
+
+@keyframes rotate{
+    0% {
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* Why Choose Us Features Section */
+
+.why-choose-us{
+    background-color: #0abf77;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.why-choose-us .intro-text{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 50px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.feature-item{
+    background: #000;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.feature-item i.icon{
+    font-size: 2.5rem;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.feature-item h3{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.feature-item p{
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px){
+
+    .feature-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item{
+        max-width: 100%;
+    }
+
+    .why-choose-us .intro-text{
+        font-size: 1.5rem;
+    }
+}
+
+/* Pricing Plans CSS */
+.services{
+    text-align: center;
+    padding: 2rem 1rem;
+    z-index: 1;
+    background: purple;
+}
+
+.services h2{
+    margin-bottom: 2rem;
+}
+
+.pricing-toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.toggle-container{
+    display: flex;
+    align-items: center;
+}
+
+.pricing-toggle .toggle-container{
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    color: #fff
+}
+
+.pricing-toggle .save-percentage-container{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-toggle .save-percentage{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0ce48d;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.input:checked + .slider{
+    background-color: #0ce48d;
+}
+
+.input:focus + .slider{
+    box-shadow: 0 0 1px #0ce48d;
+}
+
+.input:checked + .slider:before{
+    transform: translateX(30px);
 }
