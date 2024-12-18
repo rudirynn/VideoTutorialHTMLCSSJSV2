@@ -7,36 +7,18 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/128fab7520.js" crossorigin="anonymous"></script>
+    <!-- Header and Footer Inclusion -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>$(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+    </script>
 </head>
 <body>
-    <header>
-        <nav class="navbar" role="navigation" aria-label="Main navigation">
-            <div class="navbar__container">
-                <a href="/" id="navbar-logo">Raspberry Pi </a>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="/" class="navbar__links">Home</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/events.html" class="navbar__links">Events</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/booking.html" class="navbar__links">Booking</a>
-                    </li>
-                    <li class="navbar__btn mobile">
-                        <a href="/signup.html" class="navbar__links">Sign Up</a>
-                    </li>
-                </ul>
-
-                <div class="navbar__btn desktop">
-                    <a href="/signup.html" class="button">Sign Up</a>
-                </div>
-
-                <button class="navbar__toggle" id="mobile-menu" aria-label="Toggle Navigation" aria-expanded="" false><i class="fa-solid fa-bars"></i></button>
-            </div>
-        </nav>
-    </header>
-
+    <!-- Header Section -->
+    <div id="header"></div>
+    
     <!-- Hero Section -->
     <main>
         <section class="hero">
@@ -47,7 +29,7 @@
                     <button class="hero__btn">Sign up</button>
                 </div>
                 <div class="hero__image">
-                    <img id="hero-img" src="/images/CodeClubImage2.svg" alt="Imageo of Raspberry Pi code club">
+                    <img id="hero-img" src="images/CodeClubImage2.svg" alt="Image of Raspberry Pi code club">
                 </div>
             </div>
         </section>
@@ -186,70 +168,8 @@
             </div>
 
         </section>
-
         <!-- Footer Section -->
-        <footer>
-            <div class="footer__container">
-
-                <div class="footer__links">
-                    <div class="footer__link-wrapper">
-                        <div class="footer__link-items">
-                            <h2>About Us</h2>
-                            <a href="#">How it works</a>
-                            <a href="#">Testimonials</a>
-                            <a href="#">Careers</a>
-                            <a href="#">Investments</a>
-                            <a href="#">Terms of service</a>
-                        </div>
-
-                        <div class="footer__link-items">
-                            <h2>Contact Us</h2>
-                            <a href="#">Contact</a>
-                            <a href="#">Support</a>
-                            <a href="#">File a Claim</a>
-                            <a href="#">Sponserships</a>
-                        </div>
-                    </div>
-
-                    <div class="footer__link-wrapper">
-                        <div class="footer__link-items">
-                            <h2>Finances</h2>
-                            <a href="#">Portfolio</a>
-                            <a href="#">News</a>
-                            <a href="#">Locations</a>
-                            <a href="#">Credit cards</a>
-                        </div>
-
-                        <div class="footer__link-items">
-                            <h2>Social Media</h2>
-                            <a href="https://www.facebook.com/raspberrypi/" target="_blank" rel="noopener noreferrer">Facebook</a>
-                            <a href="https://www.instagram.com/raspberrypi/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                            <a href="https://x.com/Raspberry_Pi" target="_blank" rel="noopener noreferrer">Twitter</a>
-                            <a href="https://www.linkedin.com/company/raspberrypi/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <section class="social__media">
-                    <div class="social__media-wrap">
-                        <div class="footer-logo">
-                            <a href="#" class="footer-logo">Raspberry Pi</a>
-                        </div>
-                        <p class="website__rights">
-                            © Raspberry Pi <span id="year"></span> All rights reserved
-                        </p>
-                        <div class="social__icons">
-                            <a href="https://www.facebook.com/raspberrypi/" class="social__icon-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagrams.com/raspberrypi/" class="social__icon-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://x.com/Raspberry_Pi" class="social__icon-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/company/raspberrypi/" class="social__icon-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-        </footer>
-
+        <div id="footer"></div>
     </main>
     <script src="app.js"></script>
 </body>
